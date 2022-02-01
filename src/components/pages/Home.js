@@ -1,23 +1,21 @@
-import Header from "../Header";
-import CallToAction from "../CallToAction";
-import OurSkill from "../OurSkill";
-import Counter from "../Counter";
-import OurTeam from "../OurTeam";
-import Review from "../Review";
-import OurClient from "../OurClient";
-
-
+import HeaderSlider from "../HeaderSlider";
+import AboutComponent from "../AboutComponent";
+import ServiceOffrer from "../ServiceOffter";
+import Expereince from "../Expereince";
+import TeamComponent from "../TeamComponent";
+import Clients from "../Clients";
 
 export default function Home(){
     return (
-        <> 
-        <Header />
-        <CallToAction />
-        <OurSkill />
-        <Counter />
-        <OurTeam />
-        <Review />
-        <OurClient />
+        <>
+        
+            <HeaderSlider />
+            <AboutComponent />
+            <ServiceOffrer />
+            <Expereince />
+            <Clients />
+            <TeamComponent />
         </>
     );
+
 }
