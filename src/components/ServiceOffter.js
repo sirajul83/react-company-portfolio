@@ -33,9 +33,9 @@ export default function ServiceOffrer(){
                             </div>
                             <div className="col-md-6 mb-5">
                                 <div className="d-flex">
-                                    <i className="fa fa-3x fa-envelope-open-text text-primary mr-4"></i>
+                                    <i className="fa fa-3x fa-cart-plus text-primary mr-4"></i>
                                     <div className="d-flex flex-column">
-                                        <h4 className="font-weight-bold mb-3">Marketing</h4>
+                                        <h4 className="font-weight-bold mb-3">E-commerce</h4>
                                         <p>Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed elitr erat</p>
                                         <a className="font-weight-semi-bold" href="">Read More <i className="fa fa-angle-double-right"></i></a>
                                     </div>

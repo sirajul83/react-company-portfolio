@@ -17,54 +17,54 @@ export default function TeamComponent(){
                      <div className="owl-item cloned" style={{width: '223.333px', marginRight: '30px'}}>
                         <div className="team-item">
                            <div className="position-relative">
-                              <img className="img-fluid w-100" src="assets/img/team-2.jpg" alt="" />
+                              <img className="img-fluid w-100" src="assets/img/arif_ali_1.1552f424.jpg" alt="" />
                               <div className="team-overlay position-absolute d-flex align-items-center justify-content-center m-3">
                                  <div className="d-flex align-items-center justify-content-start">
-                                   <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="#"><i className="fab fa-twitter"></i></a>
-                                    <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="#"><i className="fab fa-facebook-f"></i></a>
-                                    <a className="btn btn-outline-secondary rounded-circle text-center px-0" style={{width: '38px', height: '38px'}} href="#"><i className="fab fa-linkedin-in"></i></a>
+                                   <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="https://twitter.com/arifibneali"><i className="fab fa-twitter"></i></a>
+                                    <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="https://facebook.com/arifibneali"><i className="fab fa-facebook-f"></i></a>
+                                    <a className="btn btn-outline-secondary rounded-circle text-center px-0" style={{width: '38px', height: '38px'}} href="https://linkedin.com/arifibneali"><i className="fab fa-linkedin-in"></i></a>
                                  </div>
                               </div>
                            </div>
                            <div className="border border-top-0 text-center" style={{padding: '30px'}}>
-                              <h5 className="font-weight-bold">Kate Wilson</h5>
-                              <span>Designer</span>
+                              <h5 className="font-weight-bold">Arif Ibne Ali</h5>
+                              <span>Managing Director</span>
                            </div>
                         </div>
                      </div>
                      <div className="owl-item cloned" style={{width: '223.333px', marginRight: '30px'}}>
                         <div className="team-item">
                            <div className="position-relative">
-                              <img className="img-fluid w-100" src="assets/img/team-3.jpg" alt="" />
+                              <img className="img-fluid w-100" src="assets/img/arif_rupom.48b108c0.jpg" alt="" />
                               <div className="team-overlay position-absolute d-flex align-items-center justify-content-center m-3">
                                  <div className="d-flex align-items-center justify-content-start">
-                                    <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="#"><i className="fab fa-twitter"></i></a>
-                                    <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="#"><i className="fab fa-facebook-f"></i></a>
-                                    <a className="btn btn-outline-secondary rounded-circle text-center px-0" style={{width: '38px', height: '38px'}} href="#"><i className="fab fa-linkedin-in"></i></a>
+                                    <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="https://twitter.com/arifibneali"><i className="fab fa-twitter"></i></a>
+                                    <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="https://www.facebook.com/arifrupom.0507"><i className="fab fa-facebook-f"></i></a>
+                                    <a className="btn btn-outline-secondary rounded-circle text-center px-0" style={{width: '38px', height: '38px'}} href="https://www.linkedin.com/in/arif-rupom-8451bb11b/"><i className="fab fa-linkedin-in"></i></a>
                                  </div>
                               </div>
                            </div>
                            <div className="border border-top-0 text-center" style={{padding: '30px'}}>
-                              <h5 className="font-weight-bold">John Brown</h5>
-                              <span>Developer</span>
+                              <h5 className="font-weight-bold">Ariful Islam</h5>
+                              <span>Project Manager</span>
                            </div>
                         </div>
                      </div>
                      <div className="owl-item active" style={{width: '223.333px', marginRight: '30px'}}>
                         <div className="team-item">
                            <div className="position-relative">
-                              <img className="img-fluid w-100" src="assets/img/team-1.jpg" alt="" />
+                              <img className="img-fluid w-100" src="assets/img/omar_shohag.23b34d76.jpg" alt="" />
                               <div className="team-overlay position-absolute d-flex align-items-center justify-content-center m-3">
                                  <div className="d-flex align-items-center justify-content-start">
-                                    <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="#"><i className="fab fa-twitter"></i></a>
-                                    <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="#"><i className="fab fa-facebook-f"></i></a>
-                                    <a className="btn btn-outline-secondary rounded-circle text-center px-0" style={{width: '38px', height: '38px'}} href="#"><i className="fab fa-linkedin-in"></i></a>
+                                    <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="https://twitter.com/arifibneali"><i className="fab fa-twitter"></i></a>
+                                    <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="https://www.facebook.com/omarshohag93"><i className="fab fa-facebook-f"></i></a>
+                                    <a className="btn btn-outline-secondary rounded-circle text-center px-0" style={{width: '38px', height: '38px'}} href="https://www.linkedin.com/in/omar-shohag/"><i className="fab fa-linkedin-in"></i></a>
                                  </div>
                               </div>
                            </div>
                            <div className="border border-top-0 text-center" style={{padding: '30px'}}>
-                              <h5 className="font-weight-bold">John Brown</h5>
-                              <span>Developer</span>
+                              <h5 className="font-weight-bold">Md Omar Faruk</h5>
+                              <span>Software Developer</span>
                            </div>
                         </div>
                      </div>
