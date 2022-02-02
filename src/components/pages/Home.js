@@ -3,7 +3,7 @@ import AboutComponent from "../AboutComponent";
 import ServiceOffrer from "../ServiceOffter";
 import Expereince from "../Expereince";
 import TeamComponent from "../TeamComponent";
-import Clients from "../Clients";
+//import Clients from "../Clients";
 
 export default function Home(){
     return (
@@ -13,7 +13,7 @@ export default function Home(){
             <AboutComponent />
             <ServiceOffrer />
             <Expereince />
-            <Clients />
+            {/* <Clients /> */}
             <TeamComponent />
         </>
     );

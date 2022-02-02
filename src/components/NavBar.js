@@ -19,6 +19,7 @@ export default function NavBar(){
                                 <Link to="/" className="nav-item nav-link active">Home</Link>
                                 <Link to="about" className="nav-item nav-link">About</Link>
                                 <Link to="service" className="nav-item nav-link">Services</Link>
+                                <Link to="portfolio" className="nav-item nav-link">Portfolio</Link>
                                 <Link to="team" className="nav-item nav-link">Team</Link>
                                 <Link to="contact" className="nav-item nav-link">Contact</Link>
                             </div>

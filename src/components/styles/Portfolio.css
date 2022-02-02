@@ -1,0 +1,13 @@
+.ProjectDiv img:hover{
+  transition: transform .3s;
+}
+.ProjectDiv img:hover{
+    cursor: pointer;
+    -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc;
+      -ms-transform: scale(1.1); /* IE 9 */
+      -webkit-transform: scale(1.1); /* Safari 3-8 */
+      transform: scale(1.1); 
+      transition: transform .2s;
+}

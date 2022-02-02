@@ -7,8 +7,7 @@ export default function TeamComponent(){
          <div className="col-lg-4 mb-5">
             <small className="bg-primary text-white text-uppercase font-weight-bold px-1">Meet The Team</small>
             <h1 className="mt-2 mb-3">Meet Experts of Behind Work</h1>
-            <h4 className="font-weight-normal text-muted mb-4">Eirmod diam magna sed sea rebum, elitr diam dolor lorem ipsum, ipsum stet magna ea diam vero stet vero</h4>
-            <a href="" className="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Meet All Experts</a>
+            <h4 className="font-weight-normal text-muted mb-4">Our team working more effectively, efficiently, or innovatively in carrying out complex cognitive.</h4>
          </div>
          <div className="col-lg-8 mb-5">
             <div className="owl-carousel team-carousel owl-loaded owl-drag">
@@ -38,7 +37,7 @@ export default function TeamComponent(){
                               <img className="img-fluid w-100" src="assets/img/arif_rupom.48b108c0.jpg" alt="" />
                               <div className="team-overlay position-absolute d-flex align-items-center justify-content-center m-3">
                                  <div className="d-flex align-items-center justify-content-start">
-                                    <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="https://twitter.com/arifibneali"><i className="fab fa-twitter"></i></a>
+                                    <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="#"><i className="fab fa-twitter"></i></a>
                                     <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="https://www.facebook.com/arifrupom.0507"><i className="fab fa-facebook-f"></i></a>
                                     <a className="btn btn-outline-secondary rounded-circle text-center px-0" style={{width: '38px', height: '38px'}} href="https://www.linkedin.com/in/arif-rupom-8451bb11b/"><i className="fab fa-linkedin-in"></i></a>
                                  </div>
@@ -56,7 +55,7 @@ export default function TeamComponent(){
                               <img className="img-fluid w-100" src="assets/img/omar_shohag.23b34d76.jpg" alt="" />
                               <div className="team-overlay position-absolute d-flex align-items-center justify-content-center m-3">
                                  <div className="d-flex align-items-center justify-content-start">
-                                    <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="https://twitter.com/arifibneali"><i className="fab fa-twitter"></i></a>
+                                    <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="#"><i className="fab fa-twitter"></i></a>
                                     <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} href="https://www.facebook.com/omarshohag93"><i className="fab fa-facebook-f"></i></a>
                                     <a className="btn btn-outline-secondary rounded-circle text-center px-0" style={{width: '38px', height: '38px'}} href="https://www.linkedin.com/in/omar-shohag/"><i className="fab fa-linkedin-in"></i></a>
                                  </div>

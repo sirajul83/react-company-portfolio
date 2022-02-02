@@ -19,7 +19,7 @@ export default function AboutComponent(){
                             <i className="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
                             <div className="d-flex flex-column">
                                 <h5 className="font-weight-bold">Our Office</h5>
-                                <p className="m-0">Nilkhet Rd, Dhaka 1000</p>
+                                <p className="m-0">House#74, Road # 21, Block #B, Banani, Dhaka-1213, Bangladesh</p>
                             </div>
                         </div>
                     </div>
