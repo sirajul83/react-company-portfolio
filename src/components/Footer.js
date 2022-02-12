@@ -1,7 +1,24 @@
 
-import * as React from "react";
+import React,{ useState, useEffect} from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
+
 export default function Footer(){
+    const [companyinfo, setCompanyinfo] = useState('');
+    useEffect(()=>{
+        async function getCompanyinfo(){
+            try {
+                const company_info = await axios.get("http://localhost/step-techbd/api/companyinfo")
+                   // console.log(company_info.data.data)
+                setCompanyinfo(company_info.data.data)
+            } catch (error) {
+                console.log(error)
+            }
+        }
+        getCompanyinfo();
+
+    }, [])
+    //console.log(companyinfo);
     return (
         <>
             <div className="container-fluid bg-secondary text-white mt-5 pt-5 px-sm-3 px-md-5">
@@ -10,12 +27,12 @@ export default function Footer(){
                         <Link to="/" className="navbar-brand">
                             <h1 className="m-0 mt-n2 text-white display-4"><span className="text-primary">S</span>tep<span className="text-primary">T</span>ech</h1>
                         </Link>
-                        <p>One of The Best Software Company</p>
+                        <p>{companyinfo.slogan}</p>
                         <div className="d-flex justify-content-start mt-4">
-                            <Link className="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} to="/"><i className="fab fa-twitter"></i></Link>
-                            <Link className="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} to="/"><i className="fab fa-facebook-f"></i></Link>
-                            <Link className="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} to="/"><i className="fab fa-linkedin-in"></i></Link>
-                            <Link className="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} to="/"><i className="fab fa-instagram"></i></Link>
+                            <Link className="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} to={"www.twitter.com"+companyinfo.twitter}><i className="fab fa-twitter"></i></Link>
+                            <Link className="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} to={"www.facebook.com"+companyinfo.facebook}><i className="fab fa-facebook-f"></i></Link>
+                            <Link className="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} to={"www.linkedin"+companyinfo.linkedIn}><i className="fab fa-linkedin-in"></i></Link>
+                            <Link className="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} to={"www.instagram"}><i className="fab fa-instagram"></i></Link>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6 mb-5">
@@ -42,10 +59,10 @@ export default function Footer(){
                     </div>
                     <div className="col-lg-3 col-md-6 mb-5">
                         <h5 className="font-weight-bold text-primary mb-4">Get In Touch</h5>
-                        <p><i className="fa fa-map-marker-alt text-primary mr-2"></i>House#74, Road # 21, Block #B, Banani, Dhaka-1213, Bangladesh</p>
-                        <p><i className="fa fa-phone-alt text-primary mr-2"></i>+880 1672-758084</p>
-                        <p><i className="fa fa-phone-alt text-primary mr-2"></i>+880 1673-050507</p>
-                        <p><i className="fa fa-envelope text-primary mr-2"></i>info@steptechbd.com</p>
+                        <p><i className="fa fa-map-marker-alt text-primary mr-2"></i> {companyinfo.address}</p>
+                        <p><i className="fa fa-phone-alt text-primary mr-2"></i>{companyinfo.mobile_no1}</p>
+                        <p><i className="fa fa-phone-alt text-primary mr-2"></i>{companyinfo.mobile_no2}</p>
+                        <p><i className="fa fa-envelope text-primary mr-2"></i>{companyinfo.email}</p>
                     </div>
                 </div>
             </div>
