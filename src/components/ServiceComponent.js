@@ -1,8 +1,9 @@
 import React,{ useState, useEffect} from "react";
 import axios from "axios";
+import useApiurl from "./hooks/apiUrl";
 
 export default function ServiceComponent(){
-
+    const url = useApiurl();    
     const [services, setServices] = useState([]);
     const [servicesheading, setServiceHeading] = useState('');
 
@@ -11,7 +12,7 @@ export default function ServiceComponent(){
         // get all service
         async function getAllService(){
             try {
-                const service = await axios.get("http://localhost/step-techbd/api/service")
+                const service = await axios.get(url+"api/service")
                 //console.log(service.data.data)
                 setServices(service.data.data)
             } catch (error) {
@@ -26,7 +27,7 @@ export default function ServiceComponent(){
     useEffect(()=>{
         async function getServiceHeading(){
         try {
-            const service_heading = await axios.get("http://localhost/step-techbd/api/service-heading")
+            const service_heading = await axios.get(url+"api/service-heading")
            /// console.log(service_heading.data.data)
             setServiceHeading(service_heading.data.data)
         } catch (error) {

@@ -2,13 +2,15 @@
 import React,{ useState, useEffect} from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-
+import useApiurl from "./hooks/apiUrl";
 export default function Footer(){
+    const url = useApiurl();  
+
     const [companyinfo, setCompanyinfo] = useState('');
     useEffect(()=>{
         async function getCompanyinfo(){
             try {
-                const company_info = await axios.get("http://localhost/step-techbd/api/companyinfo")
+                const company_info = await axios.get(url+"api/companyinfo")
                    // console.log(company_info.data.data)
                 setCompanyinfo(company_info.data.data)
             } catch (error) {

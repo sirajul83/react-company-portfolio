@@ -1,7 +1,9 @@
 import React,{ useState, useEffect} from "react";
 import axios from "axios";
+import useApiurl from "./hooks/apiUrl";
 
 export default function Expereince(){
+    const url = useApiurl();
     
     const [experienceheading, setExperienceHeading] = useState('');
     const [experience, setExperience] = useState([]);
@@ -10,7 +12,7 @@ export default function Expereince(){
 
         async function getExperienceHeading(){
             try {
-                const experience_heading = await axios.get("http://localhost/step-techbd/api/experience-heading")
+                const experience_heading = await axios.get(url+"api/experience-heading")
                 // console.log(experience_heading.data.data)
                 setExperienceHeading(experience_heading.data.data)
             } catch (error) {
@@ -20,7 +22,7 @@ export default function Expereince(){
           // get all experience
           async function getAllExperience(){
             try {
-                const experienceinfo = await axios.get("http://localhost/step-techbd/api/experience")
+                const experienceinfo = await axios.get(url+"api/experience")
                 //console.log(experienceinfo.data.data)
                 setExperience(experienceinfo.data.data)
             } catch (error) {

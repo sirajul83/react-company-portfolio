@@ -1,16 +1,17 @@
 
 import React,{ useState, useEffect} from "react";
 import axios from "axios";
+import useApiurl from "./hooks/apiUrl";
 
 export default function AboutComponent(){
     const [aboutheading, setAboutHeading] = useState('');
     const [companyinfo, setCompanyinfo] = useState('');
-
+    const url = useApiurl();    
     useEffect(()=>{
         async function getAboutHeading(){
             try {
-                const about_heading = await axios.get("http://localhost/step-techbd/api/about-heading")
-                // console.log(about_heading.data.data)
+                const about_heading = await axios.get(url+"api/about-heading")
+                //console.log(about_heading.data.data)
                 setAboutHeading(about_heading.data.data)
             } catch (error) {
                 console.log(error)
@@ -20,8 +21,8 @@ export default function AboutComponent(){
         // company info 
         async function getCompanyinfo(){
             try {
-                const company_info = await axios.get("http://localhost/step-techbd/api/companyinfo")
-                    console.log(company_info.data.data)
+                const company_info = await axios.get(url+"api/companyinfo")
+                   // console.log(company_info.data.data)
                 setCompanyinfo(company_info.data.data)
             } catch (error) {
                 console.log(error)
@@ -37,7 +38,7 @@ export default function AboutComponent(){
             <div className="container">
                 <div className="row align-items-center pb-1">
                     <div className="col-lg-5">
-                        <img className="img-thumbnail p-3" src={"http://localhost/step-techbd/public/assets/images/"+aboutheading.image} alt="" />
+                        <img className="img-thumbnail p-3" src={url+"public/assets/images/"+aboutheading.image } alt="About img" />
                     </div>
                     <div className="col-lg-7 mt-5 mt-lg-0">
                         <small className="bg-primary text-white text-uppercase font-weight-bold px-1">{aboutheading.short_title}</small>

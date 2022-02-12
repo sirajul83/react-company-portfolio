@@ -1,8 +1,10 @@
 import React,{ useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import useApiurl from "./hooks/apiUrl";
 
 export default function TeamComponent(){
+   const url = useApiurl();    
    const [teamheading, setTeamHeading] = useState('');
    const [team, setpTeam] = useState([]);
 
@@ -10,7 +12,7 @@ export default function TeamComponent(){
 
       async function getTeamHeading(){
           try {
-              const team_heading = await axios.get("http://localhost/step-techbd/api/team-heading")
+              const team_heading = await axios.get(url+"api/team-heading")
              // console.log(team_heading.data.data)
               setTeamHeading(team_heading.data.data)
           } catch (error) {
@@ -20,7 +22,7 @@ export default function TeamComponent(){
         // get all Team
         async function getAllTeam(){
           try {
-              const team = await axios.get("http://localhost/step-techbd/api/team")
+              const team = await axios.get(url+"api/team")
               //console.log(team.data.data)
               setpTeam(team.data.data)
           } catch (error) {
@@ -53,7 +55,7 @@ export default function TeamComponent(){
                                  <div className="owl-item cloned" style={{width: '223.333px', marginRight: '30px'}} key={item.id}>
                                  <div className="team-item">
                                     <div className="position-relative">
-                                       <img className="img-fluid w-100" src={"http://localhost/step-techbd/public/assets/images/"+item.image } alt="" />
+                                       <img className="img-fluid w-100" src={url+"public/assets/images/"+item.image } alt="" />
                                        <div className="team-overlay position-absolute d-flex align-items-center justify-content-center m-3">
                                           <div className="d-flex align-items-center justify-content-start">
                                             <Link className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} target="_blank" to={"www.twitter.com/"+item.twitter}><i className="fab fa-twitter"></i></Link>

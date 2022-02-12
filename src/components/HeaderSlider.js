@@ -1,15 +1,17 @@
 
 import React,{ useState, useEffect} from "react";
 import axios from "axios";
+import useApiurl from "./hooks/apiUrl";
 
 export default function HeaderSlider(){
     const [slider, setSlider] = useState([]);
+    const url = useApiurl();    
 
     useEffect(()=>{
         async function getSlider(){
             try {
-                const sliderinfo = await axios.get("http://localhost/step-techbd/api/slider")
-                //console.log(slider_header.data.data)
+                const sliderinfo = await axios.get(url+"api/slider")
+                //console.log(sliderinfo.data.data)
                 setSlider(sliderinfo.data.data)
             } catch (error) {
                 console.log(error)
@@ -18,7 +20,7 @@ export default function HeaderSlider(){
         getSlider();
     }, [])
 
-//console.log(slider);
+// console.log(url1);
 
     return (
         <>
@@ -34,7 +36,7 @@ export default function HeaderSlider(){
                             slider.map((Slideritem) => { 
                                 return (
                                     <div className={ (Slideritem.position ===1) ? "carousel-item active" : "carousel-item"}  key={Slideritem.id}>
-                                        <img className="img-fluid" src={"http://localhost/step-techbd/public/assets/images/"+Slideritem.image } alt="SliderImage" />
+                                        <img className="img-fluid" src={ url+"public/assets/images/"+Slideritem.image } alt="SliderImage" />
                                         <div className="carousel-caption d-flex align-items-center justify-content-center">
                                             <div className="p-5" style={{width: '100%', maxWidth: '900px'}}>
                                                 <h5 className="text-white text-uppercase mb-md-3">{Slideritem.short_title}</h5>

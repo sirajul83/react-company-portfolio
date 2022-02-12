@@ -1,13 +1,14 @@
 import React,{ useState, useEffect} from "react";
 import axios from "axios";
+import useApiurl from "./hooks/apiUrl";
 
 export default function ContactComponent(){
-
+    const url = useApiurl();  
     const [companyinfo, setCompanyinfo] = useState('');
     useEffect(()=>{
         async function getCompanyinfo(){
             try {
-                const company_info = await axios.get("http://localhost/step-techbd/api/companyinfo")
+                const company_info = await axios.get(url+"api/companyinfo")
                     //console.log(company_info.data.data)
                 setCompanyinfo(company_info.data.data)
             } catch (error) {
@@ -32,7 +33,7 @@ export default function ContactComponent(){
         setLoading(true);
         let  item = { name, email, subject, message};
         
-        axios.post("http://localhost/step-techbd/api/contact",item)
+        axios.post(url+"api/contact",item)
         .then((response) => {
             // console.log(response.data.message);
             setSuccess(response.data.message);
