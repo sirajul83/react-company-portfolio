@@ -1,5 +1,6 @@
 import "./styles/Portfolio.css";
 import React,{ useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import useApiurl from "./hooks/apiUrl";
 
@@ -58,7 +59,7 @@ export default function PortfolioComponent(){
                                         <h4>{ item.title}</h4>
                                     </div>
                                 </div>
-                                <h5> { item.short_description} </h5>
+                                <h5> { item.short_description} </h5> <Link to={`${item.id}`} className="btn btn-sm btn-primary text-white"> View Details</Link>
                             </div>
                         </div>
                         );
