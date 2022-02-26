@@ -36,7 +36,7 @@ export default function AboutComponent(){
     return (
         <div className="container-fluid py-5">
             <div className="container">
-                <div className="row align-items-center pb-1">
+                <div className="row align-items-center pb-1 aboutTextDiv">
                     <div className="col-lg-5">
                         <img className="img-thumbnail p-3" src={url+"public/assets/images/"+aboutheading.image } alt="About img" />
                     </div>

@@ -58,9 +58,9 @@ export default function TeamComponent(){
                                        <img className="img-fluid w-100" src={url+"public/assets/images/"+item.image } alt="" />
                                        <div className="team-overlay position-absolute d-flex align-items-center justify-content-center m-3">
                                           <div className="d-flex align-items-center justify-content-start">
-                                            <Link className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} target="_blank" to={"www.twitter.com/"+item.twitter}><i className="fab fa-twitter"></i></Link>
-                                             <Link className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} target="_blank" to={"www.facebook.com/"+item.facebook}><i className="fab fa-facebook-f"></i></Link>
-                                             <Link className="btn btn-outline-secondary rounded-circle text-center px-0" style={{width: '38px', height: '38px'}} target="_blank" to={"www.linkedin.com/"+item.linkedIn}><i className="fab fa-linkedin-in"></i></Link>
+                                            <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} target="_blank" href={item.twitter}><i className="fab fa-twitter"></i></a>
+                                             <a className="btn btn-outline-secondary rounded-circle text-center mr-2 px-0" style={{width: '38px', height: '38px'}} target="_blank" href={+item.facebook}><i className="fab fa-facebook-f"></i></a>
+                                             <a className="btn btn-outline-secondary rounded-circle text-center px-0" style={{width: '38px', height: '38px'}} target="_blank" href={item.linkedIn}><i className="fab fa-linkedin-in"></i></a>
                                           </div>
                                        </div>
                                     </div>

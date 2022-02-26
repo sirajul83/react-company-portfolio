@@ -10,6 +10,7 @@ import Portfolio from "./components/pages/Portfolio";
 import Team from "./components/pages/Team";
 import Contact from "./components/pages/Contact";
 import PortfolioDetils from "./components/pages/PortfolioDetils";
+import ServiceDetails from "./components/pages/ServiceDetails";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="service" element={<Service /> } />
             <Route path="portfolio" element={<Portfolio /> } />
             <Route path="portfolio/:id" element={<PortfolioDetils />} />
+            <Route path="service/:id" element={<ServiceDetails />} />
             <Route path="team" element={<Team /> } />
             <Route path="contact" element={<Contact /> } />
           </Routes>

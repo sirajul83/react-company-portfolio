@@ -1,4 +1,5 @@
 import React,{ useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import useApiurl from "./hooks/apiUrl";
 
@@ -49,7 +50,7 @@ export default function ServiceComponent(){
                    
                 </div>
             </div>
-            <div className="row">
+            <div className="row serviceTextDiv">
                 {
                     services.map((item, index) => { 
                         return (
@@ -59,8 +60,8 @@ export default function ServiceComponent(){
                                     <div className="d-flex flex-column">
                                         <h4 className="font-weight-bold mb-3">{item.title}</h4>
                                         <p>{item.description}</p>
-                                        <a className="font-weight-semi-bold" href="">Read More <i
-                                                className="fa fa-angle-double-right"></i></a>
+                                        <Link to={`${item.id}`}  className="font-weight-semi-bold" href="">Read More <i
+                                                className="fa fa-angle-double-right"></i></Link>
                                     </div>
                                 </div>
                             </div>

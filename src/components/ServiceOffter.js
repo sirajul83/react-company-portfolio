@@ -1,4 +1,5 @@
 import React,{ useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import useApiurl from "./hooks/apiUrl";
 
@@ -40,7 +41,7 @@ export default function ServiceOffrer(){
     return (
         <div className="container-fluid pt-5 pb-3">
             <div className="container">
-                <div className="row">
+                <div className="row ">
                     <div className="col-lg-4 mb-5">
                         <small className="bg-primary text-white text-uppercase font-weight-bold px-1">{servicesheading.short_title}</small>
                         <h1 className="mt-2 mb-3">{servicesheading.title}</h1>
@@ -48,7 +49,7 @@ export default function ServiceOffrer(){
                         <a href="" className="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Discover More</a>
                     </div>
                     <div className="col-lg-8">
-                        <div className="row">
+                        <div className="row serviceTextDiv">
                                 {
                             services.map((item, index) => { 
                                 return (
@@ -58,7 +59,7 @@ export default function ServiceOffrer(){
                                             <div className="d-flex flex-column">
                                                 <h4 className="font-weight-bold mb-3">{item.title}</h4>
                                                 <p>{item.description}</p>
-                                                <a className="font-weight-semi-bold" href="">Read More <i className="fa fa-angle-double-right"></i></a>
+                                                <Link className="font-weight-semi-bold" to={ `service/${item.id}`} >Read More <i className="fa fa-angle-double-right"></i></Link>
                                             </div>
                                         </div>
                                     </div>
